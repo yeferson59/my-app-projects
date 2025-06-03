@@ -5,7 +5,7 @@ A modern Django web application with automated code quality checks, Docker optim
 ## 🚀 Features
 
 - **Django 5.2**: Latest Django framework with modern features
-- **Docker Multi-stage Build**: Optimized production container (~308MB)
+- **Docker Multi-stage Build**: Optimized production container (~229MB)
 - **Automated Code Quality**: Pre-commit hooks with formatting, linting, and testing
 - **Package Management**: UV for fast Python dependency management
 - **Static Files**: WhiteNoise for efficient static file serving
@@ -207,7 +207,7 @@ Every commit automatically runs:
 
 ### Image Details
 - **Base**: Alpine Linux (lightweight)
-- **Size**: ~308MB (optimized multi-stage build)
+- **Size**: ~229MB (optimized multi-stage build)
 - **Security**: Non-root user, minimal packages
 - **Performance**: 2 Gunicorn workers, optimized caching
 
