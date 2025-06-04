@@ -38,7 +38,9 @@ ENV PYTHONUNBUFFERED=1
 ENV PYTHONOPTIMIZE=2
 ENV DJANGO_SETTINGS_MODULE=app.settings_prod
 
-COPY --chown=appuser:appgroup . .
+COPY --chown=appuser:appgroup manage.py ./manage.py
+COPY --chown=appuser:appgroup app ./app
+COPY --chown=appuser:appgroup applications ./applications
 
 RUN python manage.py collectstatic --noinput \
     && python -m compileall -b /app \
